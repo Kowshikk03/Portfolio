@@ -1,0 +1,118 @@
+.skills-section {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.skills-section::before,
+.skills-section::after {
+  content: "";
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  background-color: #7c66e3;
+  position: absolute;
+  z-index: -1;
+  filter: blur(225px);
+}
+
+.skills-section::before {
+  top: -5rem;
+  left: -5rem;
+}
+
+.skills-section::after {
+  bottom: -5rem;
+  right: -5rem;
+}
+
+.skills-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.skills-subtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  perspective: 1200px;
+}
+
+.skill-card {
+  background: #174185;
+  border-radius: 0.75rem; 
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 150px;
+  box-shadow: 0 5px 15px rgba(124, 102, 227, 0.3);
+  transform-style: preserve-3d; 
+}
+
+.skill-card:hover {
+  box-shadow: 0px 20px 35px rgba(124, 102, 227, 0.6);
+  background: #1a4b99;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.skill-card p {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+    max-width: 120px;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+  }
+
+  .skill-card p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,249 @@
+.about-container {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: #0f172a;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.about-container::after,
+.about-container::before {
+  content: "";
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  background-color: #7c66e3;
+  position: absolute;
+  z-index: -1;
+  filter: blur(225px);
+}
+
+.about-container::before {
+  top: -5rem;
+  left: -5rem;
+}
+
+.about-container::after {
+  bottom: -5rem;
+  right: -5rem;
+}
+
+.about-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.about-subtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+}
+
+.avatar-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c66e3, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px; 
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(135deg, #7c66e3, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.role {
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.social-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-pill:hover {
+  transform: translateY(-5px) scale(1.1);
+  background: linear-gradient(135deg, #7c66e3, #9333ea);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.social-pill.instagram:hover {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #515bd4);
+}
+
+.social-pill.facebook:hover {
+  background: #1877f2;
+}
+
+.social-pill.github:hover {
+  background: #333;
+}
+
+.social-pill.twitter:hover {
+  background: #1da1f2;
+}
+
+.social-pill.linkedin:hover {
+  background: #0a66c2;
+}
+
+.about-details {
+  flex: 2;
+  min-width: 300px;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+  line-height: 1.9;
+  color: #e2e8f0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(124, 102, 227, 0.25);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: #7c66e3;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-profile {
+    text-align: center;
+  }
+
+  .avatar-circle {
+    width: 110px;
+    height: 110px;
+    padding: 4px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .role {
+    font-size: 0.9rem;
+  }
+
+  .features {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-container {
+    padding: 2rem 1rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .avatar-circle {
+    width: 90px;
+    height: 90px;
+    padding: 3px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .role {
+    font-size: 0.85rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+    max-width: 1300px !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+.circular-text-wrapper {
+  position: fixed;
+  bottom: 20px;   /* distance from bottom */
+  right: 20px;    /* distance from right */
+  z-index: 1000;  /* stays above other elements */
+}
+
