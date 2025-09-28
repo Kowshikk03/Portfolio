@@ -29,7 +29,7 @@ const Project = () => {
               A full-stack food ordering application with user authentication and cart management.
             </p>
             <a
-              href="https://github.com/yourusername/food-ordering-portal"
+              href="https://github.com/Kowshikk03"
               target="_blank"
               rel="noreferrer"
               className="github-link"
@@ -51,7 +51,7 @@ const Project = () => {
               A personal portfolio website showcasing my skills, experience, and projects with animations.
             </p>
             <a
-              href="https://github.com/yourusername/portfolio"
+              href="https://github.com/Kowshikk03"
               target="_blank"
               rel="noreferrer"
               className="github-link"
@@ -73,7 +73,7 @@ const Project = () => {
               A weather forecasting app that provides real-time weather updates using an external API.
             </p>
             <a
-              href="https://github.com/yourusername/blog-platform"
+              href="https://github.com/Kowshikk03"
               target="_blank"
               rel="noreferrer"
               className="github-link"

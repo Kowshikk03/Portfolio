@@ -112,7 +112,7 @@ const Contact = () => {
       </div>
 
       <div className="scroll-top-wrapper">
-        <a href="#home" className="footer-btn">↑</a>
+        <a href="#hero" className="footer-btn">↑</a>
       </div>
     </section>
   );

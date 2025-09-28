@@ -32,7 +32,7 @@ const MoreProjects = () => {
               A full-stack food ordering application with user authentication and cart management.
             </p>
             <a
-              href="https://github.com/yourusername/food-ordering-portal"
+              href="https://github.com/Kowshikk03"
               target="_blank"
               rel="noreferrer"
               className="github-link"
@@ -54,7 +54,7 @@ const MoreProjects = () => {
               A personal portfolio website showcasing my skills, experience, and projects with animations.
             </p>
             <a
-              href="https://github.com/yourusername/portfolio"
+              href="https://github.com/Kowshikk03"
               target="_blank"
               rel="noreferrer"
               className="github-link"
@@ -76,7 +76,7 @@ const MoreProjects = () => {
               A weather forecasting app that provides real-time weather updates using an external API.
             </p>
             <a
-              href="https://github.com/yourusername/weather-app"
+              href="https://github.com/Kowshikk03"
               target="_blank"
               rel="noreferrer"
               className="github-link"
@@ -98,7 +98,7 @@ const MoreProjects = () => {
               Developed an expense tracker with functionality to add, update, and track daily expenses.
             </p>
             <a
-              href="https://github.com/yourusername/food-ordering-portal"
+              href="https://github.com/Kowshikk03"
               target="_blank"
               rel="noreferrer"
               className="github-link"
@@ -120,7 +120,7 @@ const MoreProjects = () => {
               Developed a Smart Home website with structured sections including navigation, hero, services, about, device management, and product gallery with cart options.
             </p>
             <a
-              href="https://github.com/yourusername/portfolio"
+              href="https://github.com/Kowshikk03"
               target="_blank"
               rel="noreferrer"
               className="github-link"
@@ -142,7 +142,7 @@ const MoreProjects = () => {
               Developed a Student Record Management application with features for adding, editing, and deleting student information.
             </p>
             <a
-              href="https://github.com/yourusername/weather-app"
+              href="https://github.com/Kowshikk03"
               target="_blank"
               rel="noreferrer"
               className="github-link"
