@@ -3,18 +3,17 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import './Hero.css';
 import cartoonImg from '../../assets/Images/cartoon.png';
-import SplitText from "../SplitText/SplitText"; // import SplitText
+import SplitText from "../SplitText/SplitText";
 
 const Hero = () => {
   return (
     <>
       <section className='hero-container' id='hero'>
         <div className='hero-content'>
-          {/* Only animate this heading */}
           <SplitText
             text="Hello, I'm Kowshikk"
             className="hero-heading"
-            splitType="chars" // animate by characters
+            splitType="chars" 
             from={{ opacity: 0, y: 50 }}
             to={{ opacity: 1, y: 0 }}
             delay={50}
@@ -22,7 +21,6 @@ const Hero = () => {
             tag="h2"
           />
 
-          {/* Normal text */}
           <p>Python Full Stack Developer & Creative Technologist</p>
           <p>Crafting digital experiences with modern web technologies</p>
 
