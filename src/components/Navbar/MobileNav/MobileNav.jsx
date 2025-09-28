@@ -4,7 +4,9 @@ import { HashLink } from 'react-router-hash-link';
 
 const MobileNav = ({ isOpen, toggleMenu }) => {
   return (
-    <div className={`mobile-menu ${isOpen ? "active" : ""}`}>
+    <div className={`mobile-menu ${isOpen ? "active" : ""}`}
+    onClick={toggleMenu}>
+      
       <div className='mobile-menu-container'>
         <h1 className="mobile-logo">Kowshikk</h1>
 

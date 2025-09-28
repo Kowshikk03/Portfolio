@@ -49,20 +49,18 @@
   gap: 1.5rem;
   margin: 0 auto;
   max-width: 1200px;
-  perspective: 1200px;
 }
 
 .skill-card {
   background: #174185;
-  border-radius: 0.75rem; 
+  border-radius: 0.75rem;
   padding: 1.5rem 1rem;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
   cursor: pointer;
   width: 100%;
   max-width: 150px;
   box-shadow: 0 5px 15px rgba(124, 102, 227, 0.3);
-  transform-style: preserve-3d; 
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
@@ -73,7 +71,6 @@
 .skill-icon {
   font-size: 3rem;
   margin-bottom: 0.8rem;
-  transition: transform 0.2s ease;
 }
 
 .skill-card p {

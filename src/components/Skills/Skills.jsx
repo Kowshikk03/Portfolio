@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -36,30 +36,6 @@ const Skills = () => {
     { name: "GitHub", icon: <FaGithub color="#181717" size={50} /> },
     { name: "Firebase", icon: <SiFirebase color="#FFCA28" size={50} /> },
   ];
-
-  useEffect(() => {
-    const cards = document.querySelectorAll(".skill-card");
-
-    cards.forEach((card) => {
-      card.addEventListener("mousemove", (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-
-        const rotateX = ((y - centerY) / centerY) * 15; // max 15°
-        const rotateY = ((x - centerX) / centerX) * 15;
-
-        card.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
-      });
-
-      card.addEventListener("mouseleave", () => {
-        card.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
-      });
-    });
-  }, []);
 
   return (
     <section className="skills-section" id="skills">

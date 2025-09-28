@@ -8,7 +8,7 @@ import SplitText from "../SplitText/SplitText"; // import SplitText
 const Hero = () => {
   return (
     <>
-      <section className='hero-container' id='home'>
+      <section className='hero-container' id='hero'>
         <div className='hero-content'>
           {/* Only animate this heading */}
           <SplitText

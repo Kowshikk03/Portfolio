@@ -29,14 +29,12 @@
           element={
             <>
               <Navbar />
-              <div className="container">
-                <Hero />
-                <About />
-                <Skills />
-                <Projects />
-                <Certificates />
-                <Contact />
-              </div>
+              <Hero />
+              <About />
+              <Skills />
+              <Projects />
+              <Certificates />
+              <Contact />
               <Footer />
             </>
           }
