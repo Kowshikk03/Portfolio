@@ -290,18 +290,12 @@ textarea {
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
-
-  .contact-card {
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin: 1.5rem;
-  }
 }
 
 @media (max-width: 480px) {
   input,
   textarea {
-    padding: 0.5rem;
+    padding: 0.7rem;
   }
 
   .btn {
@@ -311,7 +305,6 @@ textarea {
   .contact-card {
     padding: 1.5rem;
     border-radius: 12px;
-    margin: 1.5rem;
   }
 
   .contact-section::before,
@@ -320,6 +313,4 @@ textarea {
     height: 18rem;
     filter: blur(150px);
   }
-
-
 }
