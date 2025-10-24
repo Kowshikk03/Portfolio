@@ -13,7 +13,6 @@ import {
 import {
   SiDjango,
   SiMysql,
-  SiMongodb,
   SiSqlite,
   SiFirebase,
   SiBootstrap,
@@ -31,7 +30,6 @@ const Skills = () => {
     { name: "Django", icon: <SiDjango color="#092E20" size={50} /> },
     { name: "MySQL", icon: <SiMysql color="#4479A1" size={50} /> },
     { name: "SQLite", icon: <SiSqlite color="#003B57" size={50} /> },
-    { name: "MongoDB", icon: <SiMongodb color="#47A248" size={50} /> },
     { name: "Git", icon: <FaGit color="#F05032" size={50} /> },
     { name: "GitHub", icon: <FaGithub color="#181717" size={50} /> },
     { name: "Firebase", icon: <SiFirebase color="#FFCA28" size={50} /> },

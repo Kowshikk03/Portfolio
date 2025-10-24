@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <h1 className="logo">Kowshikk</h1>
+          <h1 className="logo">𝓚𝓸𝔀𝓈𝓱𝓲𝓴𝓴𓂃</h1>
 
           <ul> 
             <li><HashLink smooth to="/#hero" className="menu-item white-text">Home</HashLink></li>
@@ -31,7 +31,7 @@ const Navbar = () => {
             <li>
               <button
                 className='contact-btn'
-                onClick={() => window.open('/Resume/Kowshikk.pdf', '_blank')}
+                onClick={() => window.open('/Resume/kowshikk.pdf', '_blank')}
               >
                 Resume
               </button>

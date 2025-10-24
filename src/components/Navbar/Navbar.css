@@ -17,10 +17,10 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 600;
   color: white;
-  cursor: pointer;
+  cursor: pointer;;
 }
 
 .nav-content ul {
@@ -37,7 +37,7 @@
 
 .menu-item {
   text-decoration: none;
-  font-size: 0.5rem;
+  font-size: 1rem;
   font-weight: 500;
   position: relative;
   cursor: pointer;
@@ -45,6 +45,10 @@
 
 .white-text {
   color: white;
+}
+
+.menu-item.white-text {
+  font-size: 1rem;
 }
 
 .menu-item::before {
@@ -121,10 +125,15 @@
   .nav-content ul {
     display: none;
   }
+
+  .logo {
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 425px) {
   .logo {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-left: 20px;
   }
 }

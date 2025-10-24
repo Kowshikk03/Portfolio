@@ -50,6 +50,12 @@ const MoreCertificates = () => {
       name: "Excel for Beginners Certification", 
       date: "Completed: June 2024" 
     },
+    { 
+      id: 6, 
+      image: cert6, 
+      name: "Python Full Stack Certification", 
+      date: "Completed: October 2025" 
+    },
   ];
 
   return (
